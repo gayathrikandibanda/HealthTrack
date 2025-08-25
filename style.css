@@ -79,6 +79,13 @@ body {
 .profile-name {
     font-weight: 600;
     font-size: 1.2rem;
+    color: black;
+}
+.para{
+    color: black;
+}
+.tab{
+    color: black;
 }
 .notifications {
     font-size: 1.5rem;

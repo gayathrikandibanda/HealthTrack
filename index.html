@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack – Patient Wellness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar" aria-label="Sidebar Navigation">
+            <nav>
+                <ul>
+                    <li><a href="#overview"><i class="fa-solid fa-house-medical"></i> Overview</a></li>
+                    <li><a href="#appointments"><i class="fa-solid fa-calendar-check"></i> Appointments</a></li>
+                    <li><a href="#prescriptions"><i class="fa-solid fa-pills"></i> Prescriptions</a></li>
+                    <li><a href="#reports"><i class="fa-solid fa-file-medical"></i> Reports</a></li>
+                    <li><a href="#settings"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="dashboard-header">
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Patient Profile" class="profile-img">
+                    <span class="profile-name">John Doe</span>
+                </div>
+                <div class="notifications">
+                    <i class="fa-solid fa-bell" aria-label="Notifications"></i>
+                </div>
+            </header>
+            <main>
+                <section class="health-metrics" aria-label="Health Metrics">
+                    <div class="card metric-card">
+                        <i class="fa-solid fa-heart-pulse metric-icon" style="color: #20b2aa;"></i>
+                        <div>
+                            <h3>Heart Rate</h3>
+                            <p>76 bpm</p>
+                        </div>
+                    </div>
+                    <div class="card metric-card">
+                        <i class="fa-solid fa-tachometer-alt metric-icon" style="color: #4caf50;"></i>
+                        <div>
+                            <h3>Blood Pressure</h3>
+                            <p>120/80 mmHg</p>
+                        </div>
+                    </div>
+                    <div class="card metric-card">
+                        <i class="fa-solid fa-lungs metric-icon" style="color: #2196f3;"></i>
+                        <div>
+                            <h3>Oxygen Level</h3>
+                            <p>98%</p>
+                        </div>
+                    </div>
+                    <div class="card metric-card">
+                        <i class="fa-solid fa-weight-scale metric-icon" style="color: #64b5f6;"></i>
+                        <div>
+                            <h3>BMI</h3>
+                            <p>22.5</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="appointments-section" id="appointments" aria-label="Appointments">
+                    <h2>Appointments</h2>
+                    <table class="appointments-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Doctor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-08-28</td>
+                                <td>10:00 AM</td>
+                                <td>Dr. Smith</td>
+                                <td>Upcoming</td>
+                            </tr>
+                            <tr>
+                                <td>2025-08-10</td>
+                                <td>02:00 PM</td>
+                                <td>Dr. Lee</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="prescriptions-section" id="prescriptions" aria-label="Prescriptions">
+                    <h2>Prescriptions</h2>
+                    <ul class="prescription-list">
+                        <li>
+                            <strong>Atorvastatin</strong> – 10mg, Once daily<br>
+                            <span>Prescribed by: Dr. Smith | Duration: 30 days</span>
+                        </li>
+                        <li>
+                            <strong>Metformin</strong> – 500mg, Twice daily<br>
+                            <span>Prescribed by: Dr. Lee | Duration: 60 days</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="profile-section" id="profile" aria-label="Patient Profile">
+                    <h2>Patient Profile</h2>
+                    <div class="profile-details">
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Age:</strong> 35</p>
+                        <p><strong>Gender:</strong> Male</p>
+                        <p><strong>Email:</strong> johndoe@email.com</p>
+                        <p><strong>Phone:</strong> +1 234 567 8901</p>
+                        <p><strong>Doctor Assigned:</strong> Dr. Smith</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
